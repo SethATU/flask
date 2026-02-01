@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Security system WebServer</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+  
+  <body>
+    <div class="header">
+        <h1>Security System WebServer</h1>
+    </div>
+
+    <div class="container">
+      <!--Infomation-->
+      <div class="item">
+        <h2><u>Alarm Status</u></h1>
+        <p> </p>
+      </div>
+
+      <div class="item">
+        <h2><u>Distance</u></h1>
+        <p> </p>
+        <p> </p>
+      </div>
+
+      <div class="item">
+          <h2><u>Key</u></h1>
+          <p>User: </p>
+          <P>Key: </P>
+      </div>
+
+      <div class="item">
+          <h2><u>Location</u></h1>
+          <p>Latitude: </p>
+          <p>Longitude: </p>
+      </div>
+
+      <div class="item">
+        <h2><u>Temprature</u></h1>
+        <p>20°C</p>
+        <p>68°F</p>
+      </div>
+
+      <div class="item">
+          <h2><u>Humidity</u></h1>
+          <p>50%</p>
+      </div>
+    </div>
+
+    <div popover id="popup2">
+      <div class="popup2Box">
+        <p>Latitude: 0000.0000X</p>
+        <p>Longitude: 0000.0000Y</p>
+      </div>
+      <button popovertarget="popup2" popovertargetaction="hide" id="close">Close</button>
+    </div>
+
+    <div popover id="popup3">
+      <div class="camera">
+        <iframe id="cam" src="http://10.231.187.212:81/stream" title="Camera Feed"></iframe>
+      </div>
+      <button popovertarget="popup3" popovertargetaction="hide" id="close">Close</button>
+    </div>
+      
+
+    <!-- Buttons -->
+    <div class="container1">
+      <div class="item1">
+        <button popovertarget="popup">Open Keypad</button>
+      </div>
+
+      <div class="item1">
+        <button popovertarget="popup2">View Location</button>
+      </div>
+
+      <div class="item1">
+        <button popovertarget="popup3">View Camera</button>
+      </div>
+    </div>
+    <div class="footer">
+      <p id="copy">Copyright &copy; 2025 Seth Butler</p>
+    </div>
+  </body>
+</html>
